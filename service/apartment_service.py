@@ -7,8 +7,8 @@ from domain.domain import ApartmentRequest, ApartmentResponse
 
 class ApartmentService():
     def __init__(self):
-        self.path_model ="price_appartments_app/artifacts/randomForestForApartmentPrice.pkl"
-        self.path_encoder = 'price_appartments_app/artifacts/neighbourhood_encoder.pkl'
+        self.path_model ="artifacts/randomForestForApartmentPrice.pkl"
+        self.path_encoder = 'artifacts/neighbourhood_encoder.pkl'
         self.model = self.load_artifact(self.path_model)
         self.le = self.load_artifact(self.path_encoder)
         
